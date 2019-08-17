@@ -1,0 +1,10 @@
+PORT=3000 node server.js
+/* above is the command to run the server.js file on node JS by dynamically setting the port in BASH environment */
+
+/*
+same can be done with database urls by setting them as env variables in server.js and then executing them just like how we did it with PORT. 
+*/
+
+/*
+the above is true only with BASH environment. The same is different for different environments such as fish shell etc.,
+*/

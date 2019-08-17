@@ -1,0 +1,152 @@
+create / start a project in github
+
+then copy the project link and execute the below command:::
+git clone https://github.com/roopabdr/background-generator.git ----> to download a project
+
+copy the files into this downloaded project
+
+once done go with the next command by getting into the projecr folder
+
+cd background-generator
+
+then find the status of each file within the git project folder as below:
+
+git status
+
+
+if there is anything that is untracked then add it to the git cloud project as below
+
+git add index.html
+git add script.js
+git add style.css
+
+this is to add files one by one.
+in order to add mutiple file together - execute the below command:
+
+
+git add .
+
+
+execute a git status again to get the latest status on the objects inside git project as below:
+
+git status
+
+
+this should say "Your branch is up to date and changes to be committed......" to the files you just included in the project
+
+do the same with the following command with message --> kind of a description or commit comments:
+
+git commit -m "adding strating project files"
+
+
+use the command clear to clear the git bash terminal
+
+clear
+
+Now the final step is to save the changes committed into the git cloud project and this is done via push command as follows:
+
+git push
+
+
+that's it!!!
+
+
+
+********************************************************************************************************************************************************
+
+In order to clone a project from the github cloud into your local computer execute the following command:
+
+change to the directory of choice 
+
+cd clone-background-from-git
+
+git clone https://github.com/roopabdr/background-generator.git
+
+
+make any changes then send those changes to cloud as below
+
+git add . (or maybe just one file)
+git commit -m "your message here"
+git push
+
+
+
+for any other team member to download the changes you have just made use the below command:
+
+git pull
+
+
+!!!! IMPORTANT !!!!
+A good tip generally --> Don't work on the master copy or master branch, always branch off
+!!!! IMPORTANT !!!!
+
+
+check all the brnaches present in a give git repository with the below command:
+
+git branch
+
+
+Add a newe branch to the above list as below::
+
+git branch littleFeature
+
+then check the list the branches to see if the new branch is created as follows:
+
+git branch
+
+once this is done the master branch will still be highlighted since the current working branch is still the master
+
+switch to the newly created brancha as follows:
+
+
+git checkout littleFeature
+
+
+once this is done you can merge the contents of master branch with your current branch provided you think there are changes between both the versions, do the following command:
+
+git merge master
+
+
+if there occurs an error during "git push" command then copy and paste the command suggest bye the bash command line or execute the following:
+
+git push origin conflict
+
+
+A shortcut approach to both create a branch and switch is as below:
+
+git checkout -b newbranch
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Keeping Your Fork Up To Date
+Section 16, Lecture 169
+You may have noticed something while watching the previous video...Do you have to always fork the Open Source project every time master get's updated? Luckily for you, there is a easy way to always make sure your fork has the most up to date version of the original project. Here is how:
+
+Once you are in your forked project directory in your command prompt....
+
+
+Type git remote -v and press Enter. You'll see the current configured remote repository for your fork.
+
+git remote -v
+origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
+origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
+Type git remote add upstream, and then paste the URL you would copy from the original repository if you were to do a git clone. Press Enter. It will look like this:
+
+git remote add upstream https://github.com/zero-to-mastery/PROJECT_NAME.git
+To verify the new upstream repository you've specified for your fork, type git remote -v again. You should see the URL for your fork as origin, and the URL for the original repository as upstream.
+
+git remote -v
+origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
+origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
+upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (fetch)
+upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (push)
+Now, you can keep your fork synced with the upstream repository with a few Git commands. 
+
+One simple way is to do the below command from the master of your forked repository: 
+
+git pull upstream master
+Or you can follow along another method here: "Syncing a fork." :: https://help.github.com/articles/syncing-a-fork/

@@ -1,0 +1,38 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+	background-image: url("header.jpg");
+	background-size: cover;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container {	
+	height: 100%;
+	width: 100%;
+	border: 3px solid red;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-flow: column wrap;
+}
+
+.col {
+	border: 2px solid white;
+	height: 100%;
+	width: 100%;
+	text-align: center;	
+}
+
+.col #event{
+	color: #FFFFFF;
+	font-size: 1.5em;
+}
+
+.mt-n1 {
+  margin-top: 15rem !important;
+}
+
+.col #button1 {
+
+}

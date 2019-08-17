@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Well, a neat website</title>
+</head>
+<body>
+	<header><h2 align="center">Fill out the form below and check out the courses that suits you.</h2></header>
+	<table width="30%">
+		<form>
+			<tr>
+				<td align="left"><h4>First Name :</h4></td>
+				<td><input type="text" name="firstname" required></td>
+			</tr>
+			<tr>			
+				<td align="left"><h4>Last Name :</h4></td>
+				<td><input type="text" name="lastname" required></td>
+			</tr>
+			<tr>			
+				<td align="left"><h4>Email :</h4></td>
+				<td><input type="email" name="email" required></td>
+			</tr>
+			<tr>		
+				<td align="left"><h4>Concepts you're interested in? :</h4></td>
+				<td>
+					<input type="checkbox" name="courses" value="html5"><em>HTML5</em> <br>
+					<input type="checkbox" name="courses" value="css3"><em>CSS3</em> <br>
+					<input type="checkbox" name="courses" value="reactjs"><em>ReactJS</em> <br>
+					<input type="checkbox" name="courses" value="redux"><em>React + Redux</em> <br>
+					<input type="checkbox" name="courses" value="mobile"><em>Mobile App Development</em> <br><br>
+				</td>
+			</tr>
+			<tr>
+				<td align="right"><input type="submit" value="Check out the courses yourself" formaction="courses.html"></td>
+				<td><input type="reset" value="Reset"></td>
+			</tr>
+		</form>
+	</table>
+</body>
+</html>

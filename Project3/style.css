@@ -1,0 +1,23 @@
+body {
+	background-image: url("bg1.png");
+	background-size: cover;
+}
+h2 {
+	color: red;
+	text-align: center;
+	border: 5px dashed purple;
+	cursor: pointer;
+}
+
+p {
+	color: pink;
+}
+
+p {
+	color: green;
+}
+
+li {
+	list-style: none;
+	display: inline-block;
+}
